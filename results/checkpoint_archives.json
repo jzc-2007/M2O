@@ -1,0 +1,30 @@
+{
+  "m2o_l2_checkpoint.tar.zst": {
+    "state_fields": [
+      "ema_params",
+      "opt_state",
+      "params",
+      "rms_sq",
+      "step"
+    ],
+    "archive": "m2o_l2_checkpoint.tar.zst",
+    "bytes": 3772789012,
+    "sha256": "d6d0da7ea2271471c0c4fb61fd9e94b508e86d82224370de1551cfca2f6bb157",
+    "entries": 14,
+    "verified": true
+  },
+  "m2o_xl_checkpoint.tar.zst": {
+    "state_fields": [
+      "ema_params",
+      "opt_state",
+      "params",
+      "rms_sq",
+      "step"
+    ],
+    "archive": "m2o_xl_checkpoint.tar.zst",
+    "bytes": 5270125943,
+    "sha256": "d736004e833dba542d59e22dcdaa1f6f4aa3019a50e0e02a88d5f01c8659188b",
+    "entries": 16,
+    "verified": true
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "l2_training.json": {
+    "source": "reports/ICLR_L2_SAMECFG_K4_BUDGET16K_20260919/training_report.json",
+    "original_report_sha256": "22c0784275fcb41bf236642ec37e747c35636c2dc9dd5683d83a2ef2100402ad",
+    "absolute_paths_redacted": true
+  },
+  "l2_fid50k.json": {
+    "source": "reports/ICLR_L2_SAMECFG_K4_BUDGET16K_20260919/fid50000_report.json",
+    "original_report_sha256": "a928803ebb308879e1e32ea955d21612c316407786f312a3aba67e633ed5e440",
+    "absolute_paths_redacted": true
+  },
+  "l2_k8_fid50k.json": {
+    "source": "reports/ICLR_L2_SAMECFG_K8_FIXEDCFG5_BUDGET16K_20260920/fid50000_report.json",
+    "original_report_sha256": "9486046874ee3981ce0f05786a50252dca9f4b22b416394e8bca321bb3092c0e",
+    "absolute_paths_redacted": true
+  },
+  "l2_a100_results.json": {
+    "source": "runs/l2-main-reproduction-20261011/results.json",
+    "original_report_sha256": "9c8452097fb8d5efafc46202895463d249aedb70dc047bf409f00681c8b07abe",
+    "absolute_paths_redacted": true
+  },
+  "l2_a100_training.json": {
+    "source": "runs/l2-main-reproduction-20261011/train/training_report.json",
+    "original_report_sha256": "cd5396930f01ec280e9db9e87e69d29065c1ba37796fd7062a5fe9fda1fee080",
+    "absolute_paths_redacted": true
+  }
+}

@@ -1,0 +1,178 @@
+\begin{thebibliography}{23}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alemohammad et~al.(2025)Alemohammad, Wang, and
+  Baraniuk]{alemohammad2025neon}
+Sina Alemohammad, Zhangyang Wang, and Richard~G. Baraniuk.
+\newblock Neon: Negative extrapolation from self-training improves image
+  generation.
+\newblock \emph{arXiv preprint arXiv:2510.03597}, 2025.
+
+\bibitem[Bi{\'n}kowski et~al.(2018)Bi{\'n}kowski, Sutherland, Arbel, and
+  Gretton]{binkowski2018mmd}
+Miko{\l}aj Bi{\'n}kowski, Danica~J. Sutherland, Michael Arbel, and Arthur
+  Gretton.
+\newblock Demystifying {MMD GANs}.
+\newblock In \emph{International Conference on Learning Representations}, 2018.
+\newblock URL \url{https://openreview.net/forum?id=r1lUOzWCW}.
+
+\bibitem[Chen et~al.(2025)Chen, Zhang, Tan, Guibas, Wetzstein, and
+  Bi]{chen2025piflow}
+Hansheng Chen, Kai Zhang, Hao Tan, Leonidas Guibas, Gordon Wetzstein, and Sai
+  Bi.
+\newblock $\pi$-flow: Policy-based few-step generation via imitation
+  distillation.
+\newblock \emph{arXiv preprint arXiv:2510.14974}, 2025.
+
+\bibitem[Geng et~al.(2025{\natexlab{a}})Geng, Deng, Bai, Kolter, and
+  He]{geng2025meanflow}
+Zhengyang Geng, Mingyang Deng, Xingjian Bai, J.~Zico Kolter, and Kaiming He.
+\newblock Mean flows for one-step generative modeling.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  2025{\natexlab{a}}.
+
+\bibitem[Geng et~al.(2025{\natexlab{b}})Geng, Lu, Wu, Shechtman, Kolter, and
+  He]{geng2025improved}
+Zhengyang Geng, Yiyang Lu, Zongze Wu, Eli Shechtman, J.~Zico Kolter, and
+  Kaiming He.
+\newblock Improved mean flows: On the challenges of fastforward generative
+  models.
+\newblock \emph{arXiv preprint arXiv:2512.02012}, 2025{\natexlab{b}}.
+
+\bibitem[He et~al.(2026)He, Li, Zhang, Liu, Zhong, and Wang]{he2026stabilizing}
+Xiao He, Yang Li, Peizhen Zhang, Songtao Liu, Zhao Zhong, and Nannan Wang.
+\newblock Stabilizing, scaling \& enhancing {MeanFlow} for large-scale
+  diffusion distillation.
+\newblock \emph{arXiv preprint arXiv:2605.17834}, 2026.
+
+\bibitem[Heusel et~al.(2017)Heusel, Ramsauer, Unterthiner, Nessler, and
+  Hochreiter]{heusel2017gans}
+Martin Heusel, Hubert Ramsauer, Thomas Unterthiner, Bernhard Nessler, and Sepp
+  Hochreiter.
+\newblock {GANs} trained by a two time-scale update rule converge to a local
+  nash equilibrium.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2017.
+
+\bibitem[Hu et~al.(2025)Hu, Lai, Wu, Mitsufuji, and Ermon]{hu2025mfrae}
+Zheyuan Hu, Chieh-Hsin Lai, Ge~Wu, Yuki Mitsufuji, and Stefano Ermon.
+\newblock {MeanFlow} transformers with representation autoencoders.
+\newblock \emph{arXiv preprint arXiv:2511.13019}, 2025.
+
+\bibitem[Kim et~al.(2025)Kim, Anagnostidis, Du, Sch{\"o}nfeld, Kohler,
+  Georgopoulos, Pumarola, Thabet, and Sanakoyeu]{kim2025ard}
+Yeongmin Kim, Sotiris Anagnostidis, Yuming Du, Edgar Sch{\"o}nfeld, Jonas
+  Kohler, Markos Georgopoulos, Albert Pumarola, Ali Thabet, and Artsiom
+  Sanakoyeu.
+\newblock Autoregressive distillation of diffusion transformers.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, 2025.
+
+\bibitem[Lu et~al.(2025)Lu, Sun, Wang, Jiang, Zhao, and He]{lu2025biflow}
+Yiyang Lu, Qiao Sun, Xianbang Wang, Zhicheng Jiang, Hanhong Zhao, and Kaiming
+  He.
+\newblock Bidirectional normalizing flow: From data to noise and back.
+\newblock \emph{arXiv preprint arXiv:2512.10953}, 2025.
+
+\bibitem[Luo et~al.(2023)Luo, Hu, Zhang, Sun, Li, and
+  Zhang]{luo2023diffinstruct}
+Weijian Luo, Tianyang Hu, Shifeng Zhang, Jiacheng Sun, Zhenguo Li, and Zhihua
+  Zhang.
+\newblock Diff-instruct: A universal approach for transferring knowledge from
+  pre-trained diffusion models.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2023.
+
+\bibitem[Ma et~al.(2024)Ma, Goldstein, Albergo, Boffi, Vanden-Eijnden, and
+  Xie]{ma2024sit}
+Nanye Ma, Mark Goldstein, Michael~S. Albergo, Nicholas~M. Boffi, Eric
+  Vanden-Eijnden, and Saining Xie.
+\newblock {SiT}: Exploring flow and diffusion-based generative models with
+  scalable interpolant transformers.
+\newblock In \emph{European Conference on Computer Vision}, pp.\  23--40, 2024.
+
+\bibitem[Peebles \& Xie(2023)Peebles and Xie]{peebles2023dit}
+William Peebles and Saining Xie.
+\newblock Scalable diffusion models with transformers.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, pp.\  4195--4205, 2023.
+
+\bibitem[Peng et~al.(2025)Peng, Zhu, Liu, Wu, Li, Sun, and Wu]{peng2025facm}
+Yansong Peng, Kai Zhu, Yu~Liu, Pingyu Wu, Hebei Li, Xiaoyan Sun, and Feng Wu.
+\newblock {FACM}: Flow-anchored consistency models.
+\newblock \emph{arXiv preprint arXiv:2507.03738}, 2025.
+
+\bibitem[Rombach et~al.(2022)Rombach, Blattmann, Lorenz, Esser, and
+  Ommer]{rombach2022latent}
+Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Bj{\"o}rn
+  Ommer.
+\newblock High-resolution image synthesis with latent diffusion models.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, 2022.
+
+\bibitem[Salimans \& Ho(2022)Salimans and Ho]{salimans2022progressive}
+Tim Salimans and Jonathan Ho.
+\newblock Progressive distillation for fast sampling of diffusion models.
+\newblock In \emph{International Conference on Learning Representations}, 2022.
+\newblock URL \url{https://openreview.net/forum?id=TIdIXIpzhoI}.
+
+\bibitem[Starodubcev et~al.(2026)Starodubcev, Drobyshevskiy, Kuznedelev,
+  Babenko, and Baranchuk]{starodubcev2026swd}
+Nikita Starodubcev, Ilya Drobyshevskiy, Denis Kuznedelev, Artem Babenko, and
+  Dmitry Baranchuk.
+\newblock Scale-wise distillation of diffusion models.
+\newblock In \emph{International Conference on Learning Representations}, 2026.
+\newblock URL \url{https://openreview.net/forum?id=Z06LNjqU1g}.
+
+\bibitem[Woo et~al.(2023)Woo, Debnath, Hu, Chen, Liu, Kweon, and
+  Xie]{woo2023convnextv2}
+Sanghyun Woo, Shoubhik Debnath, Ronghang Hu, Xinlei Chen, Zhuang Liu, In~So
+  Kweon, and Saining Xie.
+\newblock {ConvNeXt V2}: Co-designing and scaling {ConvNets} with masked
+  autoencoders.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, pp.\  16133--16142, 2023.
+
+\bibitem[Yin et~al.(2024{\natexlab{a}})Yin, Gharbi, Park, Zhang, Shechtman,
+  Durand, and Freeman]{yin2024dmd2}
+Tianwei Yin, Micha{\"e}l Gharbi, Taesung Park, Richard Zhang, Eli Shechtman,
+  Fredo Durand, and William~T. Freeman.
+\newblock Improved distribution matching distillation for fast image synthesis.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  2024{\natexlab{a}}.
+
+\bibitem[Yin et~al.(2024{\natexlab{b}})Yin, Gharbi, Zhang, Shechtman, Durand,
+  Freeman, and Park]{yin2023dmd}
+Tianwei Yin, Micha{\"e}l Gharbi, Richard Zhang, Eli Shechtman, Fredo Durand,
+  William~T. Freeman, and Taesung Park.
+\newblock One-step diffusion with distribution matching distillation.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, 2024{\natexlab{b}}.
+
+\bibitem[Zhang et~al.(2018)Zhang, Isola, Efros, Shechtman, and
+  Wang]{zhang2018perceptual}
+Richard Zhang, Phillip Isola, Alexei~A. Efros, Eli Shechtman, and Oliver Wang.
+\newblock The unreasonable effectiveness of deep features as a perceptual
+  metric.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, 2018.
+
+\bibitem[Zhao et~al.(2026)Zhao, Zhang, Sun, Zhou, Li, Yang, Chen, and
+  Sun]{zhao2026mfd}
+An~Zhao, Shengyuan Zhang, Zhongjian Sun, Yixiang Zhou, Zejian Li, Ling Yang,
+  Tianrun Chen, and Lingyun Sun.
+\newblock Mean flow distillation: Robust and stable distillation for flow
+  matching models.
+\newblock \emph{arXiv preprint arXiv:2606.11155}, 2026.
+
+\bibitem[Zhou et~al.(2024)Zhou, Zheng, Wang, Yin, and Huang]{zhou2024sid}
+Mingyuan Zhou, Huangjie Zheng, Zhendong Wang, Mingzhang Yin, and Hai Huang.
+\newblock Score identity distillation: Exponentially fast distillation of
+  pretrained diffusion models for one-step generation.
+\newblock In \emph{Proceedings of the 41st International Conference on Machine
+  Learning}, 2024.
+\newblock URL \url{https://proceedings.mlr.press/v235/zhou24x.html}.
+
+\end{thebibliography}

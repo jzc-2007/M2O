@@ -1,0 +1,62 @@
+experiment: m2o_l2
+teacher:
+  model: iMF-L-2
+  checkpoint: assets/iMF-L-2/checkpoint/iMF-L-2
+  omega: 5.0
+  t_min: 0.4
+  t_max: 0.6
+data:
+  image_size: 32
+  channels: 4
+  num_classes: 1000
+student:
+  architecture: imeanflow_endpoint
+  upstream_root: vendor/imeanflow
+  omega: 5.0
+  t_min: 0.4
+  t_max: 0.6
+  warmstart_checkpoint: assets/iMF-L-2/checkpoint/iMF-L-2
+training:
+  mode: teacher_only_generated_endpoint
+  seed: 42
+  sample_seed: 20260831
+  batch_size: 4
+  max_steps: 16000
+  teacher_steps: 4
+  teacher_rollout_impl: scan
+  teacher_weight: 0.0
+  reference_weight: 0.0
+  feature_weight: 1.0
+  hidden_weight: 0.0
+  student_input_noise_scale: 1.0
+  student_output_scale: 1.0
+  trainable_imeanflow_u_head_from: 0
+  rms_decay: 0.999
+  learning_rate: 1.0e-06
+  adam_b2: 0.95
+  weight_decay: 0.0
+  ema_decay: 0.999
+  log_every: 25
+  checkpoint_every: 1000
+  keep_checkpoints: 2
+  feature_loss:
+    kind: convnext_kid
+    latent_codec: imeanflow
+    model_size: tiny
+    bfloat16: true
+    pretrained_path: assets/convnext
+    feature: global_mean
+evaluation:
+  latent_codec: imeanflow
+  vae_path: assets/vae
+  inception_checkpoint: assets/inception_v3_weights_fid.pickle
+  fid_reference: assets/imagenet_256_fid_stats.npz
+  device_batch_size: 4
+  inception_backend: cpu
+  seed: 20260831
+  fid_samples: 50000
+  diagnostic_batch_size: 1
+  grid_samples: 1
+  step_counts:
+  - 1
+  teacher_rollout_impl: scan

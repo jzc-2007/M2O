@@ -1,0 +1,85 @@
+{
+  "model": "iMF-L/2",
+  "student_parameters": 409054224,
+  "feature_export_dtype": "float32",
+  "params_source": "raw",
+  "warmstart_blend_alpha": 1.0,
+  "warmstart_blend_scope": {
+    "path_regex": null,
+    "matched_leaves": 443,
+    "matched_parameters": 409054224,
+    "total_parameters": 409054224,
+    "matched_path_examples": [
+      "net/cfg_t_end_embedder/mlp/layers_0/_flax_linear/bias",
+      "net/cfg_t_end_embedder/mlp/layers_0/_flax_linear/kernel",
+      "net/cfg_t_end_embedder/mlp/layers_2/_flax_linear/bias",
+      "net/cfg_t_end_embedder/mlp/layers_2/_flax_linear/kernel",
+      "net/cfg_t_start_embedder/mlp/layers_0/_flax_linear/bias",
+      "net/cfg_t_start_embedder/mlp/layers_0/_flax_linear/kernel",
+      "net/cfg_t_start_embedder/mlp/layers_2/_flax_linear/bias",
+      "net/cfg_t_start_embedder/mlp/layers_2/_flax_linear/kernel",
+      "net/class_tokens",
+      "net/h_embedder/mlp/layers_0/_flax_linear/bias",
+      "net/h_embedder/mlp/layers_0/_flax_linear/kernel",
+      "net/h_embedder/mlp/layers_2/_flax_linear/bias",
+      "net/h_embedder/mlp/layers_2/_flax_linear/kernel",
+      "net/omega_embedder/mlp/layers_0/_flax_linear/bias",
+      "net/omega_embedder/mlp/layers_0/_flax_linear/kernel",
+      "net/omega_embedder/mlp/layers_2/_flax_linear/bias",
+      "net/omega_embedder/mlp/layers_2/_flax_linear/kernel",
+      "net/omega_tokens",
+      "net/shared_blocks_0/attn/k_norm/kernel",
+      "net/shared_blocks_0/attn/k_proj/_flax_linear/kernel"
+    ],
+    "checkpoint_count": 1,
+    "normalized_checkpoint_weights": [
+      1.0
+    ],
+    "checkpoint_dirs": [
+      "archived_run/checkpoint_16000"
+    ],
+    "delta_base_checkpoint_dir": null
+  },
+  "delta_base_checkpoint_dir": null,
+  "warmstart_initial": false,
+  "samples": 50000,
+  "id_offset": 700000,
+  "seed": 20260831,
+  "batch_size": 4,
+  "inception_backend": "cpu",
+  "latent_codec": "imeanflow",
+  "label_sampling": "class_balanced_round_robin",
+  "noise_scale": 1.0,
+  "output_scale": 1.0,
+  "output_channel_scale": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "output_channel_bias": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "output_latent_channel_mean": [
+    -0.010015973131128019,
+    0.014145737403403566,
+    -0.00660591523386038,
+    -0.0041988878617473645
+  ],
+  "output_latent_channel_std": [
+    1.0269753382254365,
+    1.0270135000802159,
+    1.0154322132730231,
+    1.0260747915787096
+  ],
+  "nfe": 1,
+  "conditional_branches": 1,
+  "omega_baked_into_single_branch": 5.0,
+  "student_t_min": 0.4,
+  "student_t_max": 0.6,
+  "fid": 1.690621566596235,
+  "seconds_excluding_evaluator_initialization": 3830.9474667449977
+}

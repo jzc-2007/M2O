@@ -1,0 +1,16 @@
+numpy<2
+# CUDA plugin wheels are served from PyPI; the legacy Google-hosted
+# ``+cuda12.cudnn89`` wheel is not reachable from the H200 network.
+# Keep JAX at the version validated with Flax 0.8.5.  The ``cuda12``
+# extra uses PyPI PJRT/plugin wheels and pins cuDNN below 9 as required.
+jax[cuda12]==0.4.27
+jaxlib==0.4.27
+flax==0.8.5
+optax==0.2.3
+chex==0.1.90
+orbax-checkpoint==0.6.4
+tensorstore==0.1.67
+ml-dtypes==0.5.0
+scipy==1.13.1
+PyYAML>=6.0
+pytest>=8.0

@@ -1,0 +1,75 @@
+{
+  "release": "https://github.com/jzc-2007/M2O/releases/tag/v1.0.0",
+  "models": {
+    "L": {
+      "archive": "m2o_l2_checkpoint.tar.zst",
+      "bytes": 3772789012,
+      "sha256": "d6d0da7ea2271471c0c4fb61fd9e94b508e86d82224370de1551cfca2f6bb157",
+      "parts": [
+        {
+          "name": "m2o_l2_checkpoint.tar.zst.part01",
+          "bytes": 1073741824,
+          "sha256": "4093cdbb617db169ef3b804894e19ba6bdd5c5c10d0e97e880d7dcf1fa284cf6",
+          "url": "https://github.com/jzc-2007/M2O/releases/download/v1.0.0/m2o_l2_checkpoint.tar.zst.part01"
+        },
+        {
+          "name": "m2o_l2_checkpoint.tar.zst.part02",
+          "bytes": 1073741824,
+          "sha256": "3fa1d687aa10295a92173c0e21573b4140852b68702e7a6e9dfb37f7bf69bca1",
+          "url": "https://github.com/jzc-2007/M2O/releases/download/v1.0.0/m2o_l2_checkpoint.tar.zst.part02"
+        },
+        {
+          "name": "m2o_l2_checkpoint.tar.zst.part03",
+          "bytes": 1073741824,
+          "sha256": "546485a316f26436177c8dbbfdd24e40ed6972891df52123945b76742708b59f",
+          "url": "https://github.com/jzc-2007/M2O/releases/download/v1.0.0/m2o_l2_checkpoint.tar.zst.part03"
+        },
+        {
+          "name": "m2o_l2_checkpoint.tar.zst.part04",
+          "bytes": 551563540,
+          "sha256": "95d8adade56995cc27fcab3bfbd94fbe658a2084e88a1fd23aa860dd271e92a9",
+          "url": "https://github.com/jzc-2007/M2O/releases/download/v1.0.0/m2o_l2_checkpoint.tar.zst.part04"
+        }
+      ],
+      "parts_count": 4
+    },
+    "XL": {
+      "archive": "m2o_xl_checkpoint.tar.zst",
+      "bytes": 5270125943,
+      "sha256": "d736004e833dba542d59e22dcdaa1f6f4aa3019a50e0e02a88d5f01c8659188b",
+      "parts": [
+        {
+          "name": "m2o_xl_checkpoint.tar.zst.part01",
+          "bytes": 1073741824,
+          "sha256": "a8b6a15c7d54eb2fac165a3de4b38c30f4a2850c3f6157e2eaac6a63a5442e73",
+          "url": "https://github.com/jzc-2007/M2O/releases/download/v1.0.0/m2o_xl_checkpoint.tar.zst.part01"
+        },
+        {
+          "name": "m2o_xl_checkpoint.tar.zst.part02",
+          "bytes": 1073741824,
+          "sha256": "99db6bf16f0de539d641be703cb8f6087314cc6510c431d11fdba207c90cf293",
+          "url": "https://github.com/jzc-2007/M2O/releases/download/v1.0.0/m2o_xl_checkpoint.tar.zst.part02"
+        },
+        {
+          "name": "m2o_xl_checkpoint.tar.zst.part03",
+          "bytes": 1073741824,
+          "sha256": "6a059b6bf4ddcc1f79c12817c69094a01368a6121c627b16fc7789fd068aebc1",
+          "url": "https://github.com/jzc-2007/M2O/releases/download/v1.0.0/m2o_xl_checkpoint.tar.zst.part03"
+        },
+        {
+          "name": "m2o_xl_checkpoint.tar.zst.part04",
+          "bytes": 1073741824,
+          "sha256": "e8453ffb0a9ec6372b0419d9e5d6222a23e62868730450f78c72d46f92c597a7",
+          "url": "https://github.com/jzc-2007/M2O/releases/download/v1.0.0/m2o_xl_checkpoint.tar.zst.part04"
+        },
+        {
+          "name": "m2o_xl_checkpoint.tar.zst.part05",
+          "bytes": 975158647,
+          "sha256": "7670f5fecdd3baf76a340a1e31a213c51c3db873375c65351da912655602e5cd",
+          "url": "https://github.com/jzc-2007/M2O/releases/download/v1.0.0/m2o_xl_checkpoint.tar.zst.part05"
+        }
+      ],
+      "parts_count": 5
+    }
+  }
+}

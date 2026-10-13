@@ -1,0 +1,51 @@
+[
+  {
+    "repo": "Lyy0725/iMF",
+    "revision": "fbc11eb6687c5b6cff9beec1e6bb28fd2be46adb",
+    "file": "iMF-L-2.zip",
+    "destination": "iMF-L-2/official.zip",
+    "sha256": "6b8f4c53071f95442e5159e927a12f1935989a9fee21ae5bd2fc9929054c168c",
+    "model": "L",
+    "unzip": "iMF-L-2/checkpoint"
+  },
+  {
+    "repo": "Lyy0725/iMF",
+    "revision": "fbc11eb6687c5b6cff9beec1e6bb28fd2be46adb",
+    "file": "imagenet_256_fid_stats.npz",
+    "destination": "imagenet_256_fid_stats.npz",
+    "sha256": "f2c1c454077b28860203bd783ee5291913964355a6e70e0d0d7ad051fe0f4004"
+  },
+  {
+    "repo": "enterprise-explorers/sd-vae-ft-mse-flax",
+    "revision": "7581b0a0489cc8483c876a728b830b9ce087cf03",
+    "file": "config.json",
+    "destination": "vae/config.json",
+    "sha256": "7fa2c4918328827323b6c95caa5d0918363916c7a736eec2c6c6ec6316fb4579"
+  },
+  {
+    "repo": "enterprise-explorers/sd-vae-ft-mse-flax",
+    "revision": "7581b0a0489cc8483c876a728b830b9ce087cf03",
+    "file": "diffusion_flax_model.msgpack",
+    "destination": "vae/diffusion_flax_model.msgpack",
+    "sha256": "4f45517affbc93f169d2f5022c6c7d6c7912477f571e8011ddddeca115001562"
+  },
+  {
+    "repo": "facebook/convnextv2-tiny-22k-224",
+    "revision": "9cba4896e97bb86b1eb609e482a2149d84f345bc",
+    "file": "config.json",
+    "destination": "convnext/config.json",
+    "sha256": "f7674180aaa6ff41308f448cc06a252e7f95a959b4f93d2b57c721d473e64069"
+  },
+  {
+    "repo": "facebook/convnextv2-tiny-22k-224",
+    "revision": "9cba4896e97bb86b1eb609e482a2149d84f345bc",
+    "file": "pytorch_model.bin",
+    "destination": "convnext/pytorch_model.bin",
+    "sha256": "e5c2aa493ada512683010d9e8768f9df3ac00ae5f281f0a897c57e889673a15c"
+  },
+  {
+    "url": "https://www.dropbox.com/s/xt6zvlvt22dcwck/inception_v3_weights_fid.pickle?dl=1",
+    "destination": "inception_v3_weights_fid.pickle",
+    "sha256": "4e030efa5bccac3222d975f658d1884f9e00fab24f2812082884539220b90d77"
+  }
+]

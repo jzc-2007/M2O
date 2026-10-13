@@ -1,0 +1,17 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+# Preserve the NumPy 1.x ABI required by requirements-h200.txt.  Without this
+# repeated constraint, a fresh eval install may upgrade the validated runtime.
+numpy<2
+# FID uses torch only for CPU tensor conversion/resizing.  CPU wheels avoid
+# replacing the cuDNN<9 dependency required by JAX 0.4.27.
+torch==2.4.0+cpu
+torchvision==0.19.0+cpu
+diffusers==0.29.2
+transformers==4.44.2
+huggingface-hub==0.24.6
+einops==0.8.1
+Pillow
+tqdm
+scipy
+matplotlib<3.11
+contourpy<1.4

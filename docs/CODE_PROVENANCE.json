@@ -1,0 +1,12 @@
+{
+  "train_imeanflow_b2_convnext_kid.py": {
+    "archived_source": "paper/iclr2027/code_snapshots/train_imeanflow_b2_convnext_kid_l2_prior.py",
+    "sha256": "958472bc53bb6b174a0a0c9832231ff3caa60ed24bdf31ad7cb7cea459efafca",
+    "byte_identical_to_archive": true
+  },
+  "eval_imeanflow_b2_student.py": {
+    "archived_source": "reports/ICLR_B2_K2_EVIDENCE_20260924/source/eval_imeanflow_b2_student.py",
+    "sha256": "1cd2b56db5ac56ca4097cdd05b02e1f7669cc5df18cb502fbdb5ed144e69babb",
+    "byte_identical_to_archive": true
+  }
+}
