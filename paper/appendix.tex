@@ -157,6 +157,9 @@ endpoint, anchor, hidden-state, and composition-consistency weights are zero.
 The frozen encoder uses bfloat16 computation and global-mean features after
 the same $224\times224$ image resize and teacher-RMS normalization.
 EMA is maintained with decay 0.999; the reported student uses raw weights.
+The 1.12 H200 h reported for XL/2 in Table~\ref{tab:model-context} is an
+H200-equivalent estimate obtained by internal conversion of the recorded
+adaptation time.
 
 The teacher uses two uniform steps, $1\!\to\!0.5\!\to\!0$, implemented with
 \texttt{lax.scan}, guidance 4.00, and interval $[0.36,0.64]$.

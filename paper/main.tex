@@ -378,7 +378,7 @@ FID, numerically matching the published 610M-parameter iMF-XL/2 result.
 \caption{Selected class-conditional ImageNet-$256\times256$ results.
 Parameters are generator counts; NFE excludes the image decoder and
 $250\times2$ counts both CFG branches. Published rows use their source
-protocols. Stars mark reproduced baselines and bold marks
+protocols. Daggers mark reproduced baselines and bold marks
 our adapted XL/2 result.}
 \renewcommand{\arraystretch}{0.94}
 \begin{tabular}{lrrr}
@@ -391,9 +391,9 @@ MeanFlow-B/2~\citep{geng2025meanflow} & 131M & 1 & 6.17 \\
 MeanFlow-M/2~\citep{geng2025meanflow} & 308M & 1 & 5.01 \\
 MeanFlow-L/2~\citep{geng2025meanflow} & 459M & 1 & 3.84 \\
 MeanFlow-XL/2~\citep{geng2025meanflow} & 676M & 1 & 3.43 \\
-iMF-B/2~\citep{geng2025improved} & 89M & 1 & 3.35$^{*}$ \\
+iMF-B/2~\citep{geng2025improved} & 89M & 1 & 3.35$^{\dagger}$ \\
 iMF-M/2~\citep{geng2025improved} & 174M & 1 & 2.27 \\
-iMF-L/2~\citep{geng2025improved} & 409M & 1 & 1.88$^{*}$ \\
+iMF-L/2~\citep{geng2025improved} & 409M & 1 & 1.88$^{\dagger}$ \\
 iMF-XL/2~\citep{geng2025improved} & 610M & 1 & 1.72 \\
 ARD~\citep{kim2025ard} & 675M & 4 & 1.84 \\
 $\pi$-Flow-XL/2~\citep{chen2025piflow} & 675M & 1 & 2.85 \\
@@ -402,19 +402,18 @@ MF-RAE (unguided)~\citep{hu2025mfrae} & 841M & 1 & 2.03 \\
 \midrule
 iMF-B/2 + M2O (0.60 H200 h) & 89M & 1 & 3.00 \\
 iMF-L/2 + M2O (0.93 H200 h) & 409M & 1 & 1.72 \\
-iMF-XL/2 + M2O (1.12 H200-eq. h) & 610M & 1 & \textbf{1.62} \\
+iMF-XL/2 + M2O (1.12 H200 h)$^{*}$ & 610M & 1 & \textbf{1.62} \\
 \bottomrule
 \end{tabular}
 \label{tab:model-context}
 \par\smallskip
 \begin{minipage}{\linewidth}
 \footnotesize
-$^{*}$ Our reproductions of the released checkpoints; the original iMF paper
-reports 3.39 for B/2 and 1.86 for L/2. The reproduced L/2 value 1.88 uses
-calibrated CFG=10.50; the fixed-CFG=5.00 baseline for M2O is 2.31
-(Table~\ref{tab:headline}).
-With an eight-step teacher, the L/2 student reaches 1.69 in 1.18 H200-hours
-(Table~\ref{tab:compute-teacher}).
+$^{\dagger}$ Reproduced checkpoints; published FIDs: B/2 3.39, L/2 1.86.
+L/2 1.88 uses CFG=10.50; its fixed-CFG=5.00 baseline is 2.31
+(Table~\ref{tab:headline}). With an eight-step teacher, L/2 reaches 1.69
+in 1.18 H200 h (Table~\ref{tab:compute-teacher}).
+$^{*}$ XL/2 compute: see Appendix~\ref{app:xl-protocol}.
 \end{minipage}
 \end{table}
 
