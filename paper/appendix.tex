@@ -2,7 +2,7 @@
 \label{app:protocol}
 
 \paragraph{Optimizer and parameter mask.}
-Both sizes initialize from their corresponding released iMF checkpoint. The
+B/2 and L/2 initialize from their corresponding released iMF checkpoint. The
 AdamW learning rate is $10^{-6}$ with zero weight decay and $\beta_2=0.95$.
 The archived setting \texttt{trainable\_imeanflow\_u\_head\_from: 0}
 updates all \texttt{u\_heads} blocks and \texttt{u\_final\_layer} within
@@ -83,8 +83,8 @@ L/2 matched self-teacher & 4 & 5.00 & $[0.40,0.60]$ & 1.00 & 1.00 \\
 \end{table}
 
 \paragraph{Evaluation separation.}
-Sampler selection uses a 5,000-sample development bank with seed 20260831
-and ID offset 500000. Every FID comparison measured in this work
+For B/2 and L/2, sampler selection uses a 5,000-sample development bank with seed 20260831
+and ID offset 500000. Their FID comparisons
 uses 50,000 generated samples, the same seed, offset 700000, and strictly
 balanced labels $y={\rm sample\_id}\bmod1000$. Evaluation uses the same
 real-reference moments and CPU Inception implementation with float32 feature
@@ -100,7 +100,7 @@ branch count, and NFE. The final and independent 22-file rerun archives are
 SHA-256 verified; raw export verifies parameter count and serialization.
 
 \paragraph{Cost boundary.}
-Adaptation time includes initialization, compilation, online teacher sampling,
+B/2 and L/2 adaptation time includes initialization, compilation, online teacher sampling,
 VAE decoding, feature extraction, optimization, and checkpointing on one H200. It excludes
 checkpoint pretraining, sampler selection, and final evaluation. The recorded
 L/2 eight-step sampler search costs 5.17 H200-hours; a five-point four-step
@@ -142,6 +142,40 @@ L/2 same-class student & 87.66 & 97.61 & 0.49 \\
 \end{tabular}
 \label{tab:diagnostics}
 \end{table}
+
+\subsection{XL/2 configuration and evaluation}
+\label{app:xl-protocol}
+The XL/2 result in Table~\ref{tab:model-context} initializes the student and
+frozen teacher from the released iMF-XL/2 checkpoint. The same parameter
+mask updates 100,698,128 of 610,415,632 generator parameters. Training uses
+16,000 AdamW updates with batch size 4 (64,000 generated noise--label pairs),
+constant learning rate $10^{-6}$, $\beta_2=0.95$, and zero weight decay.
+The training seed is 42 and the generated-pair seed is 20260831, with
+uniformly sampled independent labels. The loss is the unit-weight
+ConvNeXtV2-Tiny distribution term in Appendix~\ref{app:m2o-objective};
+endpoint, anchor, hidden-state, and composition-consistency weights are zero.
+The frozen encoder uses bfloat16 computation and global-mean features after
+the same $224\times224$ image resize and teacher-RMS normalization.
+EMA is maintained with decay 0.999; the reported student uses raw weights.
+
+The teacher uses two uniform steps, $1\!\to\!0.5\!\to\!0$, implemented with
+\texttt{lax.scan}, guidance 4.00, and interval $[0.36,0.64]$.
+The one-step baseline and student use guidance 8.00 and interval
+$[0.42,0.62]$. Input-noise and output scales are both 1.00.
+The raw checkpoint at 16K updates is selected using FID-5K from the
+predeclared 4K and 16K milestones before final FID-50K evaluation.
+
+XL/2 evaluation follows the upstream iMF seed-99 protocol, using the same
+50,000 noise--label pairs for the baseline and student. Noise is generated
+in blocks of 80: fold seed 99 by the block index, split the resulting key
+three ways, and use the second key for float32 Gaussian noise of shape
+$(80,32,32,4)$. Labels cycle through the 1,000 classes. Generator batch size
+is 80; VAE decoding and upstream Inception feature extraction use batches
+of 8, with FID statistics accumulated in float64. The final evaluation
+uses the upstream sampler; the one-step project and upstream outputs agree
+exactly in the checked latent batch. This protocol yields FID-50K 1.70 for
+the released baseline and 1.62 for the selected student. The B/2 and L/2
+results retain their evaluation bank described above.
 
 \section{Additional controls and interpretation}
 \label{app:controls}
@@ -252,8 +286,9 @@ recipe uses only this distribution term.}
 
 \section{Limitations and further directions}
 \label{app:scope}
-The experiments cover two iMF sizes on ImageNet-256, with one training
-seed per key arm. B/2 uses selected teacher/student guidance; L/2 uses
+The controlled experiments cover B/2 and L/2 on ImageNet-256, with an
+additional XL/2 result and one training seed per key arm.
+B/2 and XL/2 use selected teacher/student guidance; L/2 uses
 fixed guidance. The ConvNeXtV2 encoder is pretrained on ImageNet-22K;
 its visual prior is therefore derived from the same broader ImageNet
 collection as the ImageNet-1K benchmark. Pretrained iMF and VAE weights
